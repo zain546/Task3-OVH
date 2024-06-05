@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --blue-color: #3366ff;
+  --orange-color: #ff9140;
+  --aqua-color: #8fe1fa;
+  --light-bg-color: #eff6ff;
+  --dark-bg-color: #c7f0fd;
+  /* fonts */
+  --heading-font: "Source Serif 4", serif;
+  --subheading-font: "Plus Jakarta Sans", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+}
+.font-body {
+  font-size: 17px;
+}
+/* header */
+.header-and-main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-bg-color);
+}
+.header {
+  border-bottom: 2px solid #c2d1ff70;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.header-right,
+.contact-info {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-info p i {
+  font-size: 25px;
+}
+.appointment-btn {
+  padding: 10px 20px;
+  background-color: var(--blue-color);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem auto;
+  padding: 9px 40px;
+  border-radius: 100px;
+  background-color: var(--dark-bg-color);
+}
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+.nav-search {
+  height: 45px;
+  width: 450px;
+  max-width: 300px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-search input {
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+.nav-search .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(100px, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue-color);
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-search .icon i {
+  text-align: center;
+  font-size: 22px;
+}
