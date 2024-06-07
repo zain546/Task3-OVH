@@ -8,3 +8,15 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .crousel-item {
+    width: calc(90% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .crousel-item {
+    width: calc(90% / 1);
+  }
+}
